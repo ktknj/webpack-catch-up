@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "launch": "webpack-dev-server --open --mode production",
     "start": "webpack-dev-server --open --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -40,6 +41,7 @@
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.1"
   }
 }
