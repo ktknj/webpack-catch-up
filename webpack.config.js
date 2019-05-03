@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const optimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 
 const outputPath = path.resolve(__dirname, 'dist')
 
@@ -60,7 +61,9 @@ module.exports = {
           drop_console:true
         }
       }
-    })],
+    }),
+    new optimizeCSSAssetsWebpackPlugin({})
+    ],
   }
 
 }
